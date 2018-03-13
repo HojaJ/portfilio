@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ @font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: "Bebas Neue", sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+}
+@media (min-width: 1200px){
+	.container {
+    	width: 1020px;
+	}
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a, a:active, a:focus, a:visited, a:hover {
+	text-decoration: none;
+}
+ul {
+ 	list-style: none;
+}
+#top-header {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#top-header .logo {
+	text-align: left;
+}
+
+#top-header #search {
+	font-family: "Open Sans", sans-serif;
+	padding-left: 10px;
+	margin-top: 10px;
+	border: 1px solid #e1e1e1;
+	width: 434px;
+	color: #a1a1a1;
+	height: 31px;
+	background-image: url(../img/search.png);
+	background-position: 97% center;
+	background-repeat: no-repeat;
+}
+#top-header .shop{
+	text-align: right;
+}
+#top-header .shop p {
+	font-size: 33px;
+	margin-left: 18px;
+	color: #a1a1a1;
+	float: right;
+}
+/*=========================Manu=====================*/
+#menu {
+	background-color: #4ccfc1;
+	height: ;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+	height: 36px;
+}
+#menu nav {
+	line-height: 1.8;
+}
+
+#menu nav ul li{	
+	display: inline-block;
+	text-align: center;
+}
+#menu nav ul li a {
+	color: #fff;
+	padding: 0px 20px;
+	font-size: 21px;
+	text-transform: uppercase;
+	border-right: 2px solid #fff;
+}
+#menu nav ul li:first-child a {
+	padding-left: 0;
+}
+#menu nav ul li a:hover {
+	color:  #a1a1a1;
+}
+#menu nav ul li:last-child a{
+	border-right: none;
+	padding-right: 0px;
+	letter-spacing: 1px;
+}
+
+/*=============================SHowcase==============================*/
+#showcase {
+	height: 440px;
+	padding-top: 30px;
+	background: url(../img/bgr.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#showcase .slider{
+	position: relative;
+}
+#showcase .slider:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#showcase .slider .prev, .next {
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	transition: 0.6s ease;
+}
+#showcase .slider .next {
+	right: 0px;
+	border-radius: 3px 0 0 3px;
+}
+
+#showcase .slider a:hover, 
+#showcase .slider a:focus {
+	color: #a1a1a1 !important;
+	border-color: #a1a1a1 !important;
+}
+#showcase .slider .dots {
+	position: absolute;
+	bottom: -30px;
+	left: 46%;
+}
+#showcase .slider .dots .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+#showcase .slider .dots .dot:hover {
+	background-color: #aaa;
+}
+.active {
+	background-color: #aaa !important;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#showcase img {
+	float: left;
+	margin-left: 70px;
+	max-width: 278px;
+}
+#showcase .product-title:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+#showcase .product-title {
+	float: left;
+	max-width: 405px;
+	margin-left: 120px;
+}
+#showcase .product-title h1 {
+	font-size: 61px;
+	line-height: 0.9;
+}
+#showcase .product-title p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+}
+
+#showcase .product-title a.button {
+	color: #fff;
+	margin-top: 20px;
+	display: block;
+	padding: 3px 23px;
+	font-size: 27px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: 139px;
+  	height: 46px;
+  	transition: 0.3s ease;
+}
+#showcase .product-title a.button:hover {
+
+}
+
+/*================Productos================*/
+#prod {
+	margin: 20px auto;
+	padding-left: 10%;
+	padding-right: 5%;
+	
+}
+#prod .title {
+	float: left;
+}
+#prod img {
+	float: left;
+	max-width: 180px;
+}
+#prod .imag {
+	margin-right: 30px;
+}
+#prod .title h2 {
+	text-align: left;
+	color:  #afafaf;
+	font-size: 27px;	
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+#prod .prod_box:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+#prod .prod_box {
+	text-align: left;
+	max-width: 260px;
+	margin: 0 auto;
+}
+.shop-now {
+	font-size: 19px;
+	margin-top: 20px;
+	  border-radius: 3px;
+	  background-color: rgb(60, 195, 149);
+	  padding: 5px 15px;
+ }
+/*=======================Feature=======================*/
+#feature .feat-title{
+	background: url(../img/bgr.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 70px;
+	margin-bottom: 30px;
+}
+#feature .feat-title h3 {
+	font-size: 31px;
+}
+#feature .feat-box {
+	width: 260px;
+	height: 260px;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 17px 0px;
+	border-bottom: 5px solid #3cc395;
+	margin-bottom: 30px;
+
+}
+#feature .feat-box h4 {
+	color: #afafaf;
+	font-size: 27px;
+
+}
+#feature .feat-box span {
+	color:  #afafaf;
+	float: left;
+	margin-left: 60px;
+	font-size: 27px
+}
+#feature .feat-box .shop-now {
+	margin-top: 0px;
+	margin-right: 60px;
+	line-height: 1.8;
+	padding: 0px;
+	display: inline-block;
+	width: 75px;
+	height: 34px;
+}
+
+/*===================Footer=================*/
+footer {
+	padding-top: 20px;
+	background-color: #3cc3b5;
+	height: 336px;
+}
+
+footer h4 {
+	font-size: 27px;
+}
+footer ul li a {
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 28px;
+	color: #fff;
+}
+
+
+ .copy {
+ 	margin: 0;
+ 	padding: 0;
+	text-align: center;
+	background-color: #2da89b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

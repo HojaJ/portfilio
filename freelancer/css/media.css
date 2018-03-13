@@ -1,0 +1,156 @@
+@media (max-width: 992px){
+	#header {
+		height: 905px;
+	}
+	#header .showcase h1 {
+		font-size: 40px;
+	}
+	#portfolio .port{
+		margin-left: 0px;
+	}
+	#team .team-title:before {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	#team {
+		text-align: center;
+	}
+	#team img {
+		float: none;
+	}
+	#team .team-title {
+		max-width: 250px;
+		margin: 0px auto;
+		margin-right: 0px !important;
+		float: none;
+		text-align: center;
+		margin-left: 0px;
+	}	
+}
+
+
+@media (max-width: 768px) {
+	.shown{
+		left: 0px !important;
+		-webkit-transition: all .2s linear 0s;
+		-o-transition: all .2s linear 0s;
+		transition: all .2s linear 0s;
+	}
+	#header .menu {
+		-webkit-transition: all .3s linear 0s;
+		-o-transition: all .3s linear 0s;
+		transition: all .3s linear 0s;
+		margin: 0px;
+		background-color: #fa5c65;
+		position: fixed;
+		top: 0px;
+		left: 100%;
+		display: block;
+		max-height: 100%;
+		width: 100%;
+		min-width:100%;
+		z-index: 5;
+		min-height: 100%;
+	}
+
+	#header .menu ul {
+		margin-top: 114px;
+	}
+	#header .menu ul li {
+		display: block;
+		margin: 5% auto;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+	}
+	#header .menu ul li:last-child,
+	#header .menu ul li:nth-child(5) {
+		display: none;
+	}
+	#header .menu ul li a {
+		font-size: 3rem;
+	}
+	#header .menu ul li a:hover {
+		color: #ddd;
+	}
+	#header .logo {
+		position: fixed;
+		z-index: 10;
+	}
+
+	.hamburg {
+		position: fixed;
+		display: block;
+		z-index: 10;
+	}
+	#header {
+		height: 705px;
+	}
+	#header .showcase h1 {
+		font-size: 3.5rem;
+	}
+	#header .showcase {
+		max-width: 70%;
+	}
+	#header .showcase p {
+		font-size: 1.7rem;
+	}
+	#header .showcase button {
+		margin-top: 20px;
+		padding: 15px 30px;
+	}
+	#about {
+		text-align: center;
+	}
+	#about .box p {
+		max-width: 450px;
+		margin: 10px auto;
+	}
+	#portfolio {
+		text-align: center;
+	}
+	#portfolio .port {
+		margin: auto;
+	}
+	#team .team-title {
+		max-width: 1000px;
+	}
+	.box a {
+		text-align: right;
+	}
+}
+@media (max-width: 500px) {
+	#header {
+		height: 505px;
+	}
+	#header .showcase h1 {
+		font-size: 3rem;
+	}
+	#header .showcase {
+		max-width: 80%;
+	}
+	#header .showcase button {
+		margin-top: 20px;
+		padding: 10px 20px;
+	}
+	footer ul li {
+		margin-right: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

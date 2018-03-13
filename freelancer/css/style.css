@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: "Open Sans", "Helvetica Arial", sans-serif;
+	font-weight: 400;
+	color:  #9aa0ab;
+	font-size: 15px;
+	background-color: #fff;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 970px;
+}
+
+@media (min-width: 1200px){
+	.container {
+    	width: 970px;
+	}
+}
+#header {
+	background: url(../img/bg-img.jpg) no-repeat center center;
+	height: 1055px;
+	background-size: cover;
+	position: relative;
+}
+a:active, a:focus, a:visited, a:hover {
+	text-decoration: none;
+}
+nav {
+	margin-top: 25px;
+}
+.hamburg {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+.hamburg img{
+	width: 60px;
+}
+ul {
+	padding-left: 0;
+	list-style: none;
+	text-align: right;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: 34px;
+}
+nav ul li:first-child{
+	margin-left: 0px;
+}
+nav ul li:nth-child(5) {
+	margin-left: 23px;
+}
+nav ul li:last-child{
+	margin-left: 15px;
+}
+nav ul li a {
+  	font-size: 14px;
+  	font-family: 'Montserrat', sans-serif;
+  	color: rgb(38, 55, 66);
+  	text-transform: uppercase;
+}
+nav ul li a:hover{
+	color: #fa5c65;
+}
+
+#header .logo {
+	position: absolute;
+	background-color: #fa5c65;
+	width: 140px;
+	height: 75px;
+	top: 0px;
+	border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+	left: 14px;
+	z-index: 2;
+	text-align: center;
+	padding-top: 40px;
+}
+#header .logo a {
+	font-family: "Domine", serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 20px;
+}
+
+#header .showcase {
+	position: absolute;
+	top: 23%;
+	margin-left: 14px;
+	max-width: 510px;
+}
+
+
+#header .showcase h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color:  #314a5b;
+	font-size: 48.01px;
+	font-weight: 700;
+}
+#header .showcase h1 span {
+	color: #fa5c65;
+}
+#header .showcase p{
+	color:  #314a5b;
+	font-size: 20px;
+}
+#header .showcase button {
+	color: #fff;
+	margin-top: 28px;
+	font-weight: 700;
+	background-color: #fff;
+	border-radius: 7px;
+	border: none;
+	outline: none;
+	padding: 20px 40px;
+  	background-color: rgb(250, 92, 101);
+}
+
+/*============================================About=============================*/
+#about {
+	margin: 4% 0px;
+}
+.box h3{
+	font-family: "Montserrat", sans-serif;	
+	text-transform: uppercase;
+	color:  #465065;
+	font-size: 26px;
+	font-weight: 700;
+}
+.box .box-title {
+	font-family: "Open Sans",sans-serif;
+	color:  #314a5b;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+#about .box p {
+	margin-top: 20px;
+	max-width: 265px;
+}
+.box span {
+	color: #fa5c65;
+}
+.box a{
+	display: block;
+	margin-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+	color:  #fa5c65;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.box a img {
+	margin-left: 6px;
+	margin-bottom: 4px;
+}
+/*========================================Portfolio====================*/
+#portfolio {
+	margin-top: 60px;
+}
+
+#portfolio .port {
+	margin-top: 50px;
+	width: 370px;
+	margin-left: -30px;
+}
+
+#portfolio .port .box h3 {
+	color:  #314a5b;
+	font-size: 40px;
+}
+/*========================================Team====================*/
+#team {
+	margin-bottom: 40px;
+}
+#team .box {
+	margin-bottom: 40px;
+}
+#team .box h3 {
+	color:  #314a5b;
+	font-size: 32px;
+}
+#team .team-title {
+	max-width: 163px;
+	float: left;
+	margin-left: 10px;
+}
+#team img {
+	float: left;
+}
+
+#team .team-title h4 {
+	font-family: 'Montserrat', sans-serif;
+	color:  #314a5b;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 3px;
+}
+#team .team-title span {
+	color:  #f0454c;
+	line-height: 1.9;
+	font-size: 14px;
+}
+#team .more {
+	text-align: right;
+	margin-top: 20px;
+}
+#team .more a {
+	margin-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+	color:  #fa5c65;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+#team .more a img{
+	float: none;
+	margin-left: 6px;
+	margin-bottom: 4px;
+}
+
+/*================================Footer====================================*/
+footer {
+	border-top: 1px solid rgb(230, 234, 237);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+footer ul {
+	text-align: left;
+}
+footer ul li {
+	display: inline-block;
+	margin-right: 18px;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer .copy {
+	text-align: right;
+}
