@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/scrolling.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation" id="home" >
+		<div class="container">
+			<!-- Brand and toggle -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+			</div> <!-- End of navbar-header -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#about">About us</a></li>
+					<li><a href="#price">Pricing table</a></li>
+					<li><a href="#howitworks">How it works</a></li>
+					<li><a href="#clients">Happy clients</a></li>
+					<li><a href="#contact">Contact us</a></li>
+				</ul>
+			</div>
+		</div> <!-- End of Container -->
+	</nav><!-- End of nav -->
+
+
+	<section class="showcase">
+		<div class="container">
+				<h1>Boost up your local business</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate praesentium molestiae nobis. Officia, sed.</p>
+			<form role="form" action="#" method="POST" class="form clearfix">
+				<div class="row">
+					<div class="col-sm-3 cus-p">
+						<div class="form-group">
+							<label class="sr-only">Name</label>
+							<span class="fa fa-user"></span>
+							<input type="name" class="form-control" placeholder="Full Name">
+						</div>
+					</div>
+					<div class="col-sm-3 cus-p">
+						<div class="form-group">
+							<label class="sr-only">Email</label>
+							<span class="fa fa-envelope"></span>
+							<input type="email" class="form-control" placeholder="Email Address">
+						</div>
+					</div>
+					<div class="col-sm-3 cus-p">
+						<div class="form-group">
+							<label class="sr-only">Phone</label>
+							<span class="fa fa-phone"></span>
+							<input type="tel" class="form-control" placeholder="Phone Number">
+						</div>
+					</div>
+					<div class="col-sm-3 cus-p">
+						<button type="submit" class="btn btn-custom">Request a quote</button>
+					</div>
+				</div>				
+			</form>
+
+			<div class="slider hidden-xs">
+			    <div id="Carousel" class="carousel slide" data-ride="carousel">
+			        <!-- Carousel indicators -->
+			        <ol class="carousel-indicators">
+			            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#Carousel" data-slide-to="1"></li>
+			            <li data-target="#Carousel" data-slide-to="2"></li>
+			        </ol>   
+			        <!-- Wrapper for carousel items -->
+			        <div class="carousel-inner">
+			            <div class="item active">
+			                <img src="img/laptop.png" alt="First Slide">
+			            </div>
+			        </div>
+			        <!-- Carousel controls -->
+			        <a class="left" href="#Carousel" data-slide="prev">
+			            <span class="fa fa-chevron-left"></span>
+			        </a>
+			        <a class="right" href="#Carousel" data-slide="next">
+			            <span class="fa fa-chevron-right"></span>
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="service" class="service">
+		<div class="container">
+			<div class="title">
+				<h2>Our Services</h2>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+			</div>
+			<div class="row js--wp-1">
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+					<i class="fa fa-clock-o"></i>
+					<h4>Font-Awesome Icons</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+					ustry. Lorem Ipsum has been the industry's standard dummy text ever 
+					since the 1500s, when an unknown printer.</p>
+				</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+						<i class="fa fa-cog"></i>
+						<h4>Fully Responsive Design</h4>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+					</div>
+				</div>
+			</div>
+			<div class="row js--wp-1">
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+						<i class="fa fa-graduation-cap"></i>
+						<h4>Working Contact form</h4>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+						<i class="fa fa-rocket"></i>
+						<h4>Retina Ready icons here</h4>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+					</div>
+				</div>
+			</div>
+			<div class="row js--wp-1">
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+						<i class="fa fa-clock-o"></i>
+						<h4>Friendly Code</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+						ustry. Lorem Ipsum has been the industry's standard dummy text ever 
+						since the 1500s, when an unknown printer.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="box">
+						<i class="fa fa-usd"></i>
+						<h4>Flat trendy landing page Design</h4>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-6">
+					<div class="about-box js--wp-2">
+						<h2>About us</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+						<a href="#" class="btn btn-default">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="price" class="price">
+		<div class="container">
+			<div class="title">
+				<h2>Choose your price</h2>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 no-p">
+					<div class="price-card">
+						<h3>Basic Plan</h3>
+						<b>22</b>
+						<small>per month</small>
+						<ul>
+							<li>1 accaunt</li>
+							<li>8 hour support</li>
+							<li>Custom cloud services</li>
+						</ul>
+						<a href="#" class="btn btn-price">Get started</a>
+					</div>
+				</div>
+				<div class="col-sm-4 no-p">
+					<div class="price-card">
+						<h3>Premium Plan</h3>
+						<b>42</b>
+						<small>per month</small>
+						<ul>
+							<li>2 accaunt</li>
+							<li>100MB Storage</li>
+							<li>Custom cloud services</li>
+						</ul>
+						<a href="#" class="btn btn-price">Get started</a>
+					</div>
+				</div>
+				<div class="col-sm-4 no-p">
+					<div class="price-card">
+						<h3>Gold Plan</h3>
+						<b>62</b>
+						<small>per month</small>
+						<ul>
+							<li>8 accaunt</li>
+							<li>24 hour support</li>
+							<li>Custom cloud services</li>
+						</ul>
+						<a href="#" class="btn btn-price">Get started</a>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section id="howitworks" class="howitworks">
+		<div class="container">
+			<div class="title">
+				<h2>How it works</h2>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<div class="inner-content">
+						<i class="fa fa-headphones" aria-hidden="true"></i>
+						<strong>Step 1</strong>
+						<img src="img/Arrow.png" alt="Arrow" class="down hidden-xs">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+						ustry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="inner-content">
+						<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+						<strong>Step 2</strong>
+						<img src="img/Arrow.png" alt="Arrow" class="up hidden-xs">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+						ustry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="inner-content">
+						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+						<strong>Step 3</strong>
+						<img src="img/Arrow.png" alt="Arrow" class="down hidden-xs">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+						ustry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="inner-content">
+						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+						<strong>Step 4</strong>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting ind
+						ustry. Lorem Ipsum has been</p>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn btn-price">Get started now</a>
+		</div>
+	</section>
+
+	<section id="clients" class="clients">
+		<div class="container">
+			<div class="title">
+				<h2>Happy clients</h2>
+				<p>We are explain who is using our business solutions.</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="client">
+						<img src="img/Client1.png" alt="Client Image">
+						<blockquote>
+							<p class="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<a href="#">Darwin Michel,</a><span>Project Manager</span>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="client">
+						<img src="img/Client2.png" alt="Client Image">
+						<blockquote>
+							<p class="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<a href="#">Madam Elisa,</a><span>Creative Director</span>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="client">
+						<img src="img/Client3.png" alt="Client Image">
+						<blockquote>
+							<p class="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<a href="#">Clips Arter,</a><span>Lipsum Director</span>
+						</blockquote>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="client">
+						<img src="img/Client4.png" alt="Client Image">
+						<blockquote>
+							<p class="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<a href="#">Zam Cris,</a><span>Managerr</span>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="title">
+				<h2>Newsletter</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+			</div>
+			<form role="form" action="#" method="POST" class="form">
+				<div class="row">
+					<div class="col-sm-3 cus-p">
+						<div class="form-group">
+							<label class="sr-only">Name</label>
+							<span class="fa fa-user"></span>
+							<input type="name" class="form-control" placeholder="Full Name">
+						</div>
+					</div>
+					<div class="col-sm-6 cus-p">
+						<div class="form-group">
+							<label class="sr-only">Email</label>
+							<span class="fa fa-envelope"></span>
+							<input type="email" class="form-control" placeholder="Email Address">
+						</div>
+					</div>
+					<div class="col-sm-3 cus-p">
+						<button type="submit" class="btn btn-custom">Subscribe now</button>
+					</div>
+				</div>				
+			</form>
+			<div class="map">
+				<div class="address">
+					<h4>Address</h4>
+					<ul>
+						<li>Business street</li>
+						<li>Second north section</li>
+						<li>Bavano naga. 88769</li>
+						<li>Bavano naga. 88769</li>
+						<li>Call: +997-599-641</li>
+						<a href="#">info@business.com</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer-nav hidden-xs">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#about">About us</a></li>
+					<li><a href="#price">Pricing table</a></li>
+					<li><a href="#howitworks">How it works</a></li>
+					<li><a href="#clients">Happy clients</a></li>
+					<li><a href="#contact">Contact us</a></li>
+				</ul>
+			</div>
+			<h3><i class="fa fa-phone" aria-hidden="true"></i> +997-599-641</h3>
+			<ul class="social-links">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>&copy; copyright 2018. All rights reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

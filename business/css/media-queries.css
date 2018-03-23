@@ -1,0 +1,99 @@
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+	.navbar-inverse .navbar-nav>li>a {padding: 6px 8px}
+	.navbar-inverse .navbar-nav>li>a:first-child {padding-left: 0;}
+	.about {
+		height: 450px;
+		padding: 60px 0px 0px;
+	}
+	.about-box { margin-left: 10px; }
+	.inner-content {margin-top: 50px;}
+	.inner-content .down {
+		top: -30px;
+		margin-left: -35px;
+		width: 100px;
+	}
+
+	.inner-content .up {
+		width: 100px;
+		top: 80px;
+		margin-left: -35px;
+	}
+	.inner-content i {margin-bottom: 40px;}
+	.footer-nav a { padding: 10px; }
+}
+
+
+
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+	.about {
+		height: 400px;
+		padding: 10px 0px 0px;
+	}
+}
+
+
+
+@media only screen and (max-width:768px) {
+	h1 {font-size: 30px;}
+	h2 {font-size: 25px;}
+	.title span {font-size: 15px;}
+	.showcase  p{font-size: 15px;}
+	.form {	margin: 30px 100px 0px;}
+	
+	.service {margin: 30px auto 0px;}
+	.box {
+		max-width: 600px;
+		margin: 10px auto;
+		padding-left: 30px;
+	}
+	.service i {margin: 10px 15px  60px 0px;}
+	.about {
+		height: 100%;
+		background-image: none;
+		padding: 30px 0px;
+	}
+	.about-box { margin: 0px auto;}
+	.inner-content i {margin-bottom: 0px;}
+	.inner-content {margin-bottom: 50px;}
+	.footer-nav a { padding: 5px; }
+	.contact {padding-bottom: 0;}
+}
+
+
+
+
+@media only screen and (max-width:650px){
+	.form {margin: 30px 70px 0px;}
+}
+
+
+
+
+@media only screen and (max-width:520px) {
+	.form-control {	height: 35px;}
+	h1 {font-size: 25px;}
+	.showcase  p{font-size: 14px;}
+	.showcase {	padding-top: 5vh;}
+	.form .btn-custom{	height: 35px;}
+	.form .form-group span {
+		font-size: 14px;
+		top: 10px;
+	}
+	.form {	margin: 30px 40px 0px;}
+	.service i {margin: 45px 15px  60px 0px;}
+	.box {padding-left: 0px;}
+
+	.price-card {
+		margin: 50px auto 0px;
+		width: 90%;
+		padding: 30px 30px 50px;
+	}
+}
+
+
+@media only screen and (max-width: 300px) {
+	h1 {font-size: 25px;}
+	h2 {font-size: 20px;}
+	.title span {font-size: 15px;}
+	.showcase  p{font-size: 13px;}
+}
