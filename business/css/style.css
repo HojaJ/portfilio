@@ -13,10 +13,10 @@
 /*Basics*/
 /*==================================*/
 html {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 400;
