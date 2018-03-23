@@ -12,9 +12,11 @@
 /*==================================*/
 /*Basics*/
 /*==================================*/
-
+html {
+	overflow-y: scroll;
+}
 body {
-	overflow-x: hidden;
+	overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 400;
