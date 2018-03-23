@@ -12,6 +12,9 @@
 /*==================================*/
 /*Basics*/
 /*==================================*/
+html {
+	overflow: hidden;
+}
 body {
 	overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
