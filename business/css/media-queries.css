@@ -46,6 +46,8 @@
 		margin: 10px auto;
 		padding-left: 30px;
 	}
+	.price, .howitworks, .clients, .contact {padding-top: 30px;}
+	.map { height: 450px; }
 	.service i {margin: 10px 15px  60px 0px;}
 	.about {
 		height: 100%;

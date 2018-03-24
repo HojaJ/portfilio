@@ -32,7 +32,7 @@ $(document).ready(function(){
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
             $('html,body').animate({
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top - 300
             }, 1000); // The number here represents the speed of the scroll in milliseconds
             return false;
           }
@@ -41,7 +41,7 @@ $(document).ready(function(){
   }
   // ===== Scroll to Top ==== 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 250) {        // If page is scrolled more than 250px
+        if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 250px
             $('#return-to-top').fadeIn(200);    // Fade in the arrow
         } else {
             $('#return-to-top').fadeOut(200);   // Else fade out the arrow
@@ -54,17 +54,3 @@ $(document).ready(function(){
   });
 });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('.collapse a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.collapse ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
