@@ -1,50 +1,49 @@
 $(document).ready(function(){
-   $('.js--wp-1').waypoint(function(direction) {
-    $('.js--wp-1').addClass('animated fadeInUp');
-  }, {
-    offset: '100%'
+
+
+  $('.navbar').affix({
+    offset: {
+      top: $('header').height()
+    }
   });
-  $('.js--wp-2').waypoint(function(direction) {
-    $('.js--wp-2').addClass('animated bounceInRight');
-  }, {
-    offset: '100%'
-  })
-  // Add smooth scrolling to all links
-// Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#Carousel"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
+  if( window.innerWidth > 768 ){
+      $('a').not('[href="#Carousel"]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 70
+            }, 1000); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
         }
-      }
+      });
+    
+  }else{
+        $('a').not('[href="#Carousel"]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
+        }
+      });
+  }
+  // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 250) {        // If page is scrolled more than 250px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
     });
-  // $('.carousel').carousel();
+  AOS.init({
+    duration: 500,
+    disable: window.innerWidth < 768
+  });
 });

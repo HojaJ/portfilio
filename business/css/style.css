@@ -15,14 +15,15 @@
 html {
 	overflow-y: scroll;
 }
+
 body {
 	overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	color: #7b7b7b;
-
 }
+
 h1 {
 	font-family: 'Gotham', sans-serif;
 	font-weight: bold;
@@ -68,9 +69,61 @@ h4 {
 /*==================================*/
 /*Navigatio*/
 /*==================================*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+#return-to-top i {
+	z-index: 9999;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+header {
+	padding-bottom: 150px;
+}
 .navbar {
-	background-color: transparent;
+	background-color: #fff;
 	border: none;
+	z-index: 999;
+	opacity: 1;	
+	width: 100%;
+	margin-bottom: 5px;
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+.navbar-brand {
+    height: 50px;
+    padding: 6px 15px 0px;
+    font-size: 18px;
+    line-height: 1;
 }
 .nav {
 	margin-top: 20px;
@@ -147,7 +200,11 @@ h4 {
 	text-transform: uppercase;
 	height: 45px;
 }
-
+.form .btn-custom:hover,
+.form .btn-custom:focus {
+	color: #fff;
+	background-color: #ffa90f;
+}
 .form-control {
 	height: 45px;
 	border-radius: 1px;
@@ -192,8 +249,14 @@ h4 {
 /*==================================*/
 /*SERVICE*/
 /*==================================*/
+.service:before {
+	clear: both;
+	content: '';
+	display: table;
+}
 .service {
-	margin: 160px auto 50px;
+	padding-top: 60px;
+	margin: 60px auto 50px;
 }
 
 .service i {
@@ -219,7 +282,6 @@ h4 {
 	background-color: #ffc155;
 	background-image: url(../img/img.jpg);
 	background-repeat: no-repeat;
-	-webkit-background-size: 50% 100%;
 	background-size: 50% 100%;
 	height: 100%;
 	height: 625px;
@@ -323,7 +385,11 @@ small {
 	background-color: #ffbb42;
 	border-radius: 2px;
 }
-
+.btn-price:hover,
+.btn-price:focus{
+	color: #fff;
+	background-color: #ffa90f;
+}
 /*==================================*/
 /*HOW IR WORKS*/
 /*==================================*/
@@ -346,7 +412,9 @@ small {
 }
 .inner-content .up {
 	position: absolute;
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        -ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
 	top: 100px;
 	right: 0px;
 	left: 100%;
@@ -447,7 +515,6 @@ blockquote span {
 }
 .map {
 	background: #fff url(../img/map.jpg) no-repeat center center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	height: 560px;
 	position: relative;
@@ -530,21 +597,3 @@ footer ul li {
 .copyright p {
 	margin-bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

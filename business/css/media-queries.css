@@ -1,5 +1,5 @@
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
-	.navbar-inverse .navbar-nav>li>a {padding: 6px 8px}
+	.navbar-inverse .navbar-nav>li>a {padding: 6px 15px}
 	.navbar-inverse .navbar-nav>li>a:first-child {padding-left: 0;}
 	.about {
 		height: 450px;
@@ -40,7 +40,7 @@
 	.showcase  p{font-size: 15px;}
 	.form {	margin: 30px 100px 0px;}
 	
-	.service {margin: 30px auto 0px;}
+	.service {margin: 30px auto 0px; padding-top: 0;}
 	.box {
 		max-width: 600px;
 		margin: 10px auto;
@@ -57,7 +57,10 @@
 	.inner-content {margin-bottom: 50px;}
 	.footer-nav a { padding: 5px; }
 	.contact {padding-bottom: 0;}
+
+	.affix {position: static;}
 }
+
 
 
 
