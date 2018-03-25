@@ -1,0 +1,186 @@
+@media only screen and (max-width: 1200px) {
+	.social li {
+	    margin-left: 10px;
+	}
+	.img-box img,
+	.img-box-1 img {
+		height: 100%;
+	}
+	.blog-box {
+		height: 100%;
+		padding-top: 5%;
+    	padding-bottom: 5%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	h2 {
+	    line-height: 1.5;
+	    font-size: 38px;
+	    margin-bottom: 30px;
+	}
+	h1 {
+	    font-size: 110px;
+	    line-height: 0.9;
+	    font-weight: 700;
+	}
+	.hero-text p {
+	    font-size: 20px;
+	    letter-spacing: 10px;
+	    word-spacing: 10px;
+	}
+	.social li {
+	    display: none;
+	}
+	.blog-box {
+		height: 100%;
+		padding-top: 5%;
+    	padding-bottom: 5%;
+	}
+	.main-menu {
+		margin-left: 30px;
+	}
+	.menu li {
+	    margin-left: 11px;
+	}
+	.menu li:last-child {
+	    margin-left: 0px;
+	}
+	.blog-box {
+		height: 100%;
+		padding: 1% 0px;
+	}
+	.blog-box.left {
+
+	}
+	.blog-box h3 {
+		margin-bottom: 10px;
+	}
+	.blog-box p {
+	    line-height: 24px;
+	    max-width: 370px;
+	}
+	.white .blog-box {
+	    padding-left: 25px;
+	}
+	.about img {
+	    margin-left: 0px;
+	    width: 100%;
+	}
+	.team-box .desc {
+	    padding: 5px 0px;
+	    position: absolute;
+	    z-index: 9999;
+	    bottom: 0;
+	  	margin-left: 10px;
+	    width: 150px;
+	}
+	.team h3 {
+		font-size: 20px;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+	h2 {
+	    line-height: 1.5;
+	    font-size: 30px;
+	    margin-bottom: 30px;
+	}
+	.menu {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	h1 {
+	    font-size: 100px;
+	    line-height: 0.9;
+	    font-weight: 700;
+	}
+	h2:before {
+	    font-size: 148px;
+	    line-height: 25px;
+	    color: rgba(255,255,255,0.2);
+	}
+	.card p {
+	    line-height: 20px;
+	    padding: 0px 30px;
+	}
+	.title {
+	    margin-top: 50px;
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 50px;
+	}
+	.hero-text p {
+	    font-size: 18px;
+	    letter-spacing: 10px;
+	    word-spacing: 10px;
+	}
+	.box {
+		margin-top: 50px;
+		padding: 0px 70px;
+	}
+	.section {
+	    padding: 55px 30px;
+	}
+	.social li {
+	    display: none;
+	}
+	.blog-box {
+		height: 100%;
+		padding-top: 5%;
+    	padding-bottom: 5%;
+	}
+	.main-menu {
+		margin-left: 30px;
+	}
+	.menu li {
+	    margin-left: 11px;
+	}
+	.menu li:last-child {
+	    margin-left: 0px;
+	}
+	.blog-box {
+		height: 100%;
+		padding: 1% 0px;
+		overflow-y: scroll;
+	}
+	.blog-box h3 {
+		margin-bottom: 10px;
+	}
+	.blog-box p {
+	    line-height: 24px;
+	    max-width: 370px;
+	}
+	.white .blog-box {
+	    float: right;
+	    padding-left: 80px;
+
+	}
+	.about img {
+	    margin-top: 90px;
+	    width: 100%;
+	}
+	.about {
+    	padding: 30px 0px;
+	}
+	.team-box {
+		margin-top: 50px;
+		position: relative;
+	}
+	.team-box .desc {
+	    padding: 5px 0px;
+	    position: static;
+	    display: block;
+	    left: 0;
+	    bottom: 0;
+	    z-index: 9999;
+	    margin: -25px auto 0px auto;
+	    background-color: #fff !important;
+	    width: 150px;
+	}
+	.team h3 {
+		font-size: 20px;
+	}
+	
+}
