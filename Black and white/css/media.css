@@ -1,0 +1,79 @@
+@media only screen and (max-width: 1170px) {
+	.content-box {
+    padding: 15px 30px;
+	}
+	.autor {
+		display: inline-block;
+	    margin: 30px auto 0px;
+	    float: none;
+	    text-align: center;
+	}
+	.a-social li {
+    display: inline-block;
+	}
+}
+@media only screen and (max-width: 770px) {
+	.hidden { display: none !important; }
+	.contact-box {
+	    padding: 20px;
+	    margin-bottom: 30px;
+	}
+	.contact-box-1 {
+	    padding: 20px;
+	    text-align: center;
+	}
+	#form input { width: 100%;}
+}
+
+@media only screen and (max-width: 680px) {
+	h1 { font-size: 20px; line-height: 1.5; text-align: center;}
+	.content { text-align: center; }
+	.about p { font-size: 15px; }
+	.button {
+		font-size: 15px;
+		padding: 0px 26px;
+		margin: 10px auto 0px;
+
+	 }
+	.social ul li {
+	    margin-right: 0px;
+	}
+	.menu h1 {font-size: 35px;}
+	.menu ul li {margin: 15px auto;}
+	.about { padding: 20px 0px;}
+}
+@media only screen and (max-width: 580px) {
+	.dropbtn { display: block; }
+	.dropdown-content {
+		padding-top: 8px;
+	    display: none;
+	    position: absolute;
+	    background-color: #f1f1f1;
+	    min-width: 142px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	.logo { margin-left: -15%;}
+
+	.content-section figure {
+	    margin: 0px auto;
+	    text-align: center;
+	    display: block;
+	    float: none;
+	}
+	content-section figure figcaption {	margin-left: 0;}
+	.time {float: none; display: inline-block;}
+
+}
+@media only screen and (max-width: 350px) {
+	.logo { margin-left: -44%;}
+	h1 { font-size: 20px; }
+	.about { padding: 20px 10px; }
+	.about p { font-size: 14px; }
+	.button {
+		font-size: 14px;
+		padding: 0px 20px;
+		line-height: 35px;
+
+	 }
+}
