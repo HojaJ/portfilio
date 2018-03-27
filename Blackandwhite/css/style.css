@@ -162,16 +162,18 @@ ul li {
 /*=============================*/
 .dropbtn {
 	display: none;
-    /*background-color: #3498DB;*/
-    color: black;
-    padding: 6px;
-    font-size: 12px;
+ 	background-color: transparent;
     border: none;
     cursor: pointer;
+    width: 35px;
+    height: 32px;
+    /*padding: 8px 8px 8px 32px;   */
+    background:  url(../img/icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}​
 }
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #ccc;
-}
+
 .social {
 	position: relative;
 	display: inline-block;
@@ -406,7 +408,7 @@ ul li {
 	margin-left: 10px;
 }
 .content-section figure {
-	margin-right: 35px;
+	margin: 0px 20px 10px 0px;
 	display: inline-block;
 	float: left;
 }
@@ -529,7 +531,7 @@ details summary a {
 }
 .contact-box-1 {
 	background-color: #fff;
-	padding: 5px 10px 25px;
+	padding: 20px 20px 40px;
 	margin-bottom: 30px;
 }
 .contact-box p {

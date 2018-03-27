@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1170px) {
 	.content-box {
-    padding: 15px 30px;
+    padding: 45px 30px 20px;
 	}
 	.autor {
 		display: inline-block;
@@ -62,7 +62,21 @@
 	    float: none;
 	}
 	content-section figure figcaption {	margin-left: 0;}
-	.time {float: none; display: inline-block;}
+	.content-box { position: relative; }
+	.time {
+		float: none;
+		top: -15px;
+		right: 10px;
+		position: absolute; 
+		display: inline-block;
+	}
+	.title { display: none; }
+	.date {
+		float: none;
+		position: absolute;
+		top: -15px;
+		left: 10px;
+	}
 
 }
 @media only screen and (max-width: 350px) {
