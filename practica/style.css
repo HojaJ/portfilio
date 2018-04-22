@@ -1,0 +1,99 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.container {
+  width: 500px;
+  max-width: 90%;
+  margin: 40px auto 0px;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container h3 {
+  line-height: 2.5rem;
+}
+
+.container .button {
+  display: block;
+  margin: 20px auto 0px;
+  background-color: #32775e;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container a.button {
+  display: inline;
+  text-decoration: none;
+}
+
+#form h5 {
+  text-align: left;
+}
+
+#form input.note {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  background-color: #3CBC8D;
+  color: white;
+  border: none;
+}
+
+#form input.note:focus {
+  background-color: #32775e;
+}
+
+.card-content {
+  margin: 50px 0px 30px;
+}
+
+.card-content h5 {
+  text-align: left;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 10px;
+  background: #020202;
+}
+
+.card-content ul li {
+  text-align-last: left;
+  line-height: 1.8;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.card-content ul li a {
+  float: right;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+#filter {
+  width: 100%;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

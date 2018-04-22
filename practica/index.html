@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Local Storage</title>
+</head>
+<body>
+  <div class="container">
+    <h3>App For Note</h3>
+    <form id="form">
+      <h5>Add New Text</h5>    
+      <input type="text" id="note" class="note">
+      <input type="submit" class="button" value="Add Text">
+    </form>
+    <div class="text-field">
+      <h5>Filter</h5>
+      <input type="text" id="filter">
+    </div>
+    <div class="card-content">
+      <h5>Text Notes</h5>
+      <ul id="collection"></ul>
+    </div>
+  <a href="#" class="button" id="clearAll">Clear Text</a>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
