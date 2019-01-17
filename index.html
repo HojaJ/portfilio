@@ -10,23 +10,29 @@ body{
 	padding: 0;
 	background-color: #ddd;
 }
-	.wrapper {
-		text-align: center;
-		margin: 20px auto;
-		width: 1100px;
-		max-width: 1200px;
-	}
-	.items {
-		display: flex;
-    		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	
-	
-	.wrapper img {
-		margin-bottom: 20px;
-		max-width: 450px;		
-	}
+.wrapper {
+	text-align: center;
+	margin: 20px auto;
+	padding: 0 20px;
+	max-width: 1200px;
+}
+.items {
+	display: flex;
+	flex-direction: row;
+flex-wrap: wrap;
+	justify-content: center;
+}
+
+.items a {
+	display: block;
+	flex-basis: 40%;
+	margin: 20px;
+}
+
+.wrapper img {
+	display: block;
+	max-width: 100%;
+}
 </style>
 <body>
 	<div class="wrapper">
